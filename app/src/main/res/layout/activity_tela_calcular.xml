@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    tools:context=".TelaCalcular">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:background="@color/backgroud">
+
+
+            <TextView
+                android:id="@+id/textViewEsforco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ESFORÇO" />
+
+            <EditText
+                android:id="@+id/editTextEsforco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Digite aqui o esforço do projeto"/>
+
+            <TextView
+                android:id="@+id/textViewQtdPessoas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QUANTIDADE DE PESSSOAS" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Pessoas para o projeto"/>
+
+            <TextView
+                android:id="@+id/textViewDataInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA INÍCIO PROJETO" />
+
+            <EditText
+                android:id="@+id/editTextDataInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Data de Início do Projeto"/>
+
+            <TextView
+                android:id="@+id/textViewProdutividade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRODUTIVIDADE"/>
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Informe a produtividade da equipe "
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/botaoEstimar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_state_change"
+            android:text="ESTIMAR"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

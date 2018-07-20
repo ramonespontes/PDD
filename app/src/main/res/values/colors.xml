@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_colorAccent">#009BDE</color>
+    <color name="theme_colorPrimaryDark">#303F9F</color>
+    <color name="theme_colorPrimary">#3F51B5</color>
+    <color name="theme_colorWindowBackground">#666</color>
+    <color name="theme_colorButtonNormal">#2196f3</color>
+    <color name="theme_colorControlNormal">#757575</color>
+    <color name="theme_colorControlActivated">#FF6E40</color>
+    <color name="theme_colorControlHighlight">#FF4081</color>
+    <color name="theme_colorSwitchThumbNormal">#BDBDBD</color>
+    <color name="theme_colorEdgeEffect">#FF4081</color>
+    <color name="text_normal">#ffffff</color>
+    <color name="certibio_blue">#009BDE</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_darkBlue">#025783</color>
+    <color name="color_darkCyan">#00ADEF</color>
+    <color name="backgroud">#ffffff</color>
+</resources>
