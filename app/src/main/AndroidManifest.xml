@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gov.dataprev.pdd">
+    
+    <uses-permission android:name="android.permission.INTERNET >"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_alterado_round"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.vision"
+            android:value="@integer/google_play_services_version">
+        </meta-data>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/apiKey">
+
+        </meta-data>
         <activity
             android:name=".MainActivity"
             android:theme="@style/Base.Theme.AppCompat">
@@ -19,7 +31,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TelaCalcular" />
-        <activity android:name=".TelaConfigurar"></activity>
+        <activity android:name=".TelaConfigurar" />
+        <activity android:name=".TelaResultado"></activity>
     </application>
 
 </manifest>

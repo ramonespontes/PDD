@@ -18,15 +18,31 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:orientation="vertical"
-            android:weightSum="10"
             android:background="@color/backgroud">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEMANDA"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/editTextDemanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Digite aqui o número da demanda"/>
 
 
             <TextView
                 android:id="@+id/textViewEsforco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ESFORÇO" />
+                android:text="ESFORÇO"
+                android:textAlignment="center"/>
 
             <EditText
                 android:id="@+id/editTextEsforco"
@@ -41,40 +57,30 @@
                 android:id="@+id/textViewQtdPessoas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="QUANTIDADE DE PESSSOAS" />
+                android:text="QUANTIDADE DE PESSSOAS"
+                android:textAlignment="center"/>
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editTextQtdPessoas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text=""
-                android:hint="Pessoas para o projeto"/>
+                android:hint="Pessoas para o projeto"
+                />
 
-            <TextView
-                android:id="@+id/textViewDataInicio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="DATA INÍCIO PROJETO" />
-
-            <EditText
-                android:id="@+id/editTextDataInicio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text=""
-                android:hint="Data de Início do Projeto"/>
 
             <TextView
                 android:id="@+id/textViewProdutividade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PRODUTIVIDADE"/>
+                android:text="PRODUTIVIDADE"
+                android:textAlignment="center"/>
+
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/editTextProdutividade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -82,6 +88,62 @@
                 android:text=""
                 android:hint="Informe a produtividade da equipe "
                 />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA INÍCIO DO PROJETO"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/editTextDtInicioProjeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="Informe a data de início do projeto "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:orientation="horizontal"
+                android:background="@color/text_normal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxDDA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DDA"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="336dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banco"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="336dp" />
+                <CheckBox
+                    android:id="@+id/checkBoxTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teste Desemp."
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="336dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxInsumos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insumos"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="336dp" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
@@ -92,13 +154,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/button_state_change"
+            android:background="@color/theme_colorControlNormal"
             android:text="ESTIMAR"
             />
 
     </RelativeLayout>
-
-
 
 
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaResultado"
+    android:background="@color/backgroud">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="564dp"
+        android:background="@color/backgroud">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/backgroud"
+            android:text="Resultado"
+            android:textSize="25dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="350dp"
+            android:layout_height="270dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="126dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttonSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:text="Salvar"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="517dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

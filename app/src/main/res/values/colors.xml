@@ -16,4 +16,5 @@
     <color name="color_darkBlue">#025783</color>
     <color name="color_darkCyan">#00ADEF</color>
     <color name="backgroud">#ffffff</color>
+    <color name="black">#030303</color>
 </resources>
