@@ -24,8 +24,12 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:text="DEMANDA"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextDemanda"
@@ -41,8 +45,12 @@
                 android:id="@+id/textViewEsforco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:text="ESFORÇO"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextEsforco"
@@ -57,8 +65,12 @@
                 android:id="@+id/textViewQtdPessoas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:text="QUANTIDADE DE PESSSOAS"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextQtdPessoas"
@@ -75,8 +87,12 @@
                 android:id="@+id/textViewProdutividade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:text="PRODUTIVIDADE"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
 
             <EditText
@@ -93,8 +109,12 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:text="DATA INÍCIO DO PROJETO"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextDtInicioProjeto"
@@ -115,6 +135,7 @@
                     android:id="@+id/checkBoxDDA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:text="DDA"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="336dp" />
@@ -123,13 +144,16 @@
                     android:id="@+id/checkBoxBanco"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:text="Banco"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="336dp" />
+
                 <CheckBox
                     android:id="@+id/checkBoxTest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:text="Teste Desemp."
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="336dp" />
@@ -138,6 +162,7 @@
                     android:id="@+id/checkBoxInsumos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:text="Insumos"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="336dp" />
@@ -155,8 +180,11 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="30dp"
             android:background="@color/theme_colorControlNormal"
+            android:fontFamily="casual"
             android:text="ESTIMAR"
-            />
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

@@ -2,4 +2,5 @@
     <string name="app_name">PROPOSTA DE DISPONIBILIDADE</string>
     <string name="fragment_main_button_consult">Consultar</string>
     <string name="apiKey">693828077484-em03e8bd1j3iotu5saa4o70l9hqal1gs.apps.googleusercontent.com</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
 </resources>

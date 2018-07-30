@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "693828077484",
+    "firebase_url": "https://propostadedisponibilidade.firebaseio.com",
+    "project_id": "propostadedisponibilidade",
+    "storage_bucket": "propostadedisponibilidade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693828077484:android:14f8d7f10b67256d",
+        "android_client_info": {
+          "package_name": "com.gov.dataprev.pdd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693828077484-r0bn96nkogtem2vesan7fnbhprp1crjn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gov.dataprev.pdd",
+            "certificate_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+          }
+        },
+        {
+          "client_id": "693828077484-oohsqcmrprhqmburk5373pjjrf7od0qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvgZ7qZaj9KqiP1SLQ3G3gZjevsLlvOno"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693828077484-oohsqcmrprhqmburk5373pjjrf7od0qp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
