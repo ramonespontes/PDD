@@ -9,151 +9,112 @@
 
 
 
-<RelativeLayout
+    <RelativeLayout
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/text_normal">
-
-    <LinearLayout
-        android:id="@+id/ll_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical"
-        android:weightSum="10">
-
+        android:background="@color/text_normal">
 
         <LinearLayout
+            android:id="@+id/ll_main"
             android:layout_width="match_parent"
-            android:layout_height="108dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:orientation="vertical"
-            android:weightSum="1">
+            android:weightSum="10">
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="128dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/dataprev" />
+
+            <LinearLayout
+                android:id="@+id/ll_main1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:background="@color/LightSkyBlue"
+                android:layout_height="5dp">
+
+                <TextView
+                    android:id="@+id/linearLayoutMeuPDD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:paddingTop="10dp"
+                    android:text="Meu PDD"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="4.5"
+                android:orientation="vertical"
+                android:weightSum="4.5"
+                android:background="@color/LightSkyBlue">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:paddingBottom="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/logo"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="3.4"
+                android:layout_height="4dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/botaoConfigurar"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/config"/>
+
+                <ImageView
+                    android:id="@+id/botaoCalcular"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/calc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="3.5"
+                android:layout_height="4dp">
+                <TextView
+                    android:id="@+id/text_view_id"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Configurar"
+                    android:textSize="25dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="casual"/>
+                <TextView
+                    android:id="@+id/text_view_id2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Calcular"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:fontFamily="casual"/>
+            </LinearLayout>
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_weight="2.5"
-            android:orientation="vertical"
-            android:weightSum="4.5">
 
-            <!--   <Button
-                  android:id="@+id/button_enroll"
-                  android:layout_width="match_parent"
-                  android:layout_marginLeft="40dp"
-                  android:layout_marginRight="40dp"
-                  android:layout_marginTop="10dp"
-                  android:elevation="@dimen/standard_button_elevation"
-                  android:text="@string/fragment_main_button_enroll"
-                  android:textSize="16sp"
-                  android:hapticFeedbackEnabled="true"
-                  android:layout_height="0dp"
-                  android:layout_gravity="center"
-                  style="@style/one_u_button"
-                  android:layout_weight="1.5"
-                  android:layout_marginBottom="10dp" />
-
-              <Button
-                  android:id="@+id/button_enrol_export"
-                  android:layout_width="match_parent"
-                  android:layout_marginLeft="40dp"
-                  android:layout_marginRight="40dp"
-                  android:layout_marginTop="10dp"
-                  android:elevation="@dimen/standard_button_elevation"
-                  android:text="@string/fragment_main_button_enroll_export"
-                  android:textSize="16sp"
-                  android:hapticFeedbackEnabled="true"
-                  android:layout_height="0dp"
-                  android:layout_gravity="center"
-                  style="@style/one_u_button"
-                  android:layout_weight="1.5"
-                  android:layout_marginBottom="10dp" />-->
-
-
-            <!--<EditText
-                android:id="@+id/document"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
-                android:imeOptions="actionSend"
-                android:inputType="text|textNoSuggestions"
-                android:text="CPF"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused"
-                android:textSize="15sp"
-                android:value="@string/defaul_endpoint_url" />-->
-
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/botaoConfigurar"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1.5"
-            android:elevation="10dp"
-            android:hapticFeedbackEnabled="true"
-            android:text="CONFIGURAR"
-            android:textAlignment="center"
-            android:textSize="30dp" />
-
-
-        <Button
-            android:id="@+id/botaoCalcular"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1.5"
-            android:elevation="10dp"
-            android:hapticFeedbackEnabled="true"
-            android:text="CALCULAR"
-            android:textAlignment="center"
-            android:textSize="30dp" />
-
-        <!--<Button
-            android:id="@+id/button_captureAdd"
-            style="@style/one_u_button"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1.5"
-            android:elevation="@dimen/standard_button_elevation"
-            android:hapticFeedbackEnabled="true"
-            android:text="@string/add"
-            android:textSize="16sp" />-->
-
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

@@ -3,32 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/backgroud"
-    tools:context=".TelaCalcular">
+    android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:background="@color/backgroud"
             android:orientation="vertical"
-            android:background="@color/backgroud">
+            android:padding="15dp">
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/LightSkyBlue"
                 android:fontFamily="casual"
+                android:paddingTop="10dp"
                 android:text="DEMANDA"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textSize="18sp"
+
+                android:textColor="@color/backgroud"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEsforco3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="5dp"
+                android:text="NOME DO PROJETO"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:background="@color/text_normal"
+                android:textColor="@color/theme_colorWindowBackground"
                 android:textStyle="bold" />
 
             <EditText
@@ -37,65 +56,67 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""
-                android:hint="Digite aqui o número da demanda"/>
+                android:text="" />
 
 
             <TextView
-                android:id="@+id/textViewEsforco"
+                android:id="@+id/textViewEsforco2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
+                android:paddingTop="5dp"
+                android:singleLine="true"
                 android:text="ESFORÇO"
-                android:textAlignment="center"
+                android:background="@color/text_normal"
+                android:textColor="@color/theme_colorWindowBackground"
                 android:textAllCaps="true"
                 android:textSize="18sp"
-                android:singleLine="true"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextEsforco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:digits="0123456789"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""
-                android:digits="0123456789"
-                android:hint="Digite aqui o esforço do projeto"/>
+                android:text="" />
 
             <TextView
-                android:id="@+id/textViewQtdPessoas"
+                android:id="@+id/textViewEsforco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
-                android:text="QUANTIDADE DE PESSSOAS"
-                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:text="Quantidade de pessoas"
                 android:textAllCaps="true"
-                android:textSize="18sp"
+                android:background="@color/text_normal"
+                android:textColor="@color/theme_colorWindowBackground"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextQtdPessoas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:digits="0123456789"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""
-                android:digits="0123456789"
-                android:hint="Pessoas para o projeto"
-                />
+                android:text="" />
 
 
             <TextView
-                android:id="@+id/textViewProdutividade"
+                android:id="@+id/textViewEsforco5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:digits="0123456789"
                 android:fontFamily="casual"
-                android:text="PRODUTIVIDADE"
-                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:text="Produtividade"
+                android:background="@color/text_normal"
+                android:textColor="@color/theme_colorWindowBackground"
                 android:textAllCaps="true"
                 android:textSize="18sp"
-                android:digits="0123456789"
                 android:textStyle="bold" />
 
 
@@ -104,20 +125,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:digits="0123456789"
                 android:inputType="textPersonName"
-                android:text=""
-                android:hint="Informe a produtividade da equipe "
-                />
+                android:text="" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewEsforco6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
-                android:text="DATA INÍCIO DO PROJETO"
-                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:background="@color/text_normal"
+                android:text="Data de início"
                 android:textAllCaps="true"
-                android:textSize="18sp"
+                android:textColor="@color/theme_colorWindowBackground"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <EditText
@@ -125,51 +147,50 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="date"
-                android:hint="Informe a data de início do projeto "/>
+                android:inputType="date" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-
-                android:orientation="horizontal"
-                android:background="@color/text_normal">
+                android:layout_height="128dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/text_normal"
+                android:orientation="vertical"
+                android:padding="3dp">
 
                 <CheckBox
                     android:id="@+id/checkBoxDDA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="casual"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:text="DDA"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="336dp" />
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/theme_colorWindowBackground" />
 
                 <CheckBox
                     android:id="@+id/checkBoxBanco"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:fontFamily="casual"
                     android:text="Banco"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="336dp" />
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/theme_colorWindowBackground" />
 
                 <CheckBox
                     android:id="@+id/checkBoxTest"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:fontFamily="casual"
-                    android:text="Teste Desemp."
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="336dp" />
+                    android:text="Teste Desempenho"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/theme_colorWindowBackground" />
 
                 <CheckBox
                     android:id="@+id/checkBoxInsumos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:fontFamily="casual"
                     android:text="Insumos"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="336dp" />
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/theme_colorWindowBackground" />
 
             </LinearLayout>
 
@@ -182,17 +203,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="30dp"
-            android:background="@color/theme_colorControlNormal"
+            android:background="@color/LightSkyBlue"
             android:fontFamily="casual"
             android:text="ESTIMAR"
             android:textAllCaps="false"
-            android:textSize="30sp"
+            android:textColor="@color/backgroud"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
     </RelativeLayout>
-
-
 
 
 </android.support.constraint.ConstraintLayout>
