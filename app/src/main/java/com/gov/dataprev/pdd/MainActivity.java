@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button botaoConfigurar = (Button) findViewById(R.id.botaoConfigurar);
-        Button botaoCalcular = (Button) findViewById(R.id.botaoCalcular);
+        ImageView  botaoConfigurar = (ImageView) findViewById(R.id.botaoConfigurar);
+        ImageView  botaoCalcular = (ImageView) findViewById(R.id.botaoCalcular);
 
         botaoConfigurar.setOnClickListener(new OnClickListener() {
             @Override

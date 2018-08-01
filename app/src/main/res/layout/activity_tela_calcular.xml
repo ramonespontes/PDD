@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroud"
     tools:context=".TelaCalcular">
 
     <RelativeLayout
@@ -18,7 +17,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:orientation="vertical"
-            android:background="@color/backgroud">
+            android:background="@color/backgroud"
+            android:padding="15dp">
 
             <TextView
                 android:id="@+id/textView2"
@@ -27,30 +27,46 @@
                 android:fontFamily="casual"
                 android:text="DEMANDA"
                 android:textAlignment="center"
+                android:textColor="@color/backgroud"
                 android:textAllCaps="true"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:background="@color/LightSkyBlue"/>
+
+            <TextView
+                android:id="@+id/textViewEsforco3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Nome do projeto"
+                android:paddingTop="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/theme_colorWindowBackground"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
 
             <EditText
                 android:id="@+id/editTextDemanda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:background="@drawable/edit_text_style"
                 android:inputType="textPersonName"
-                android:text=""
-                android:hint="Digite aqui o número da demanda"/>
+                android:text="" />
 
 
             <TextView
-                android:id="@+id/textViewEsforco"
+                android:id="@+id/textViewEsforco2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:text="ESFORÇO"
-                android:textAlignment="center"
+                android:paddingTop="5dp"
                 android:textAllCaps="true"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textColor="@color/theme_colorWindowBackground"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
 
             <EditText
                 android:id="@+id/editTextEsforco"
@@ -58,19 +74,20 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""
-                android:hint="Digite aqui o esforço do projeto"/>
+                android:background="@drawable/edit_text_style"
+                android:text="" />
 
             <TextView
-                android:id="@+id/textViewQtdPessoas"
+                android:id="@+id/textViewEsforco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
-                android:text="QUANTIDADE DE PESSSOAS"
-                android:textAlignment="center"
+                android:text="Quantidade de pessoas"
+                android:paddingTop="5dp"
                 android:textAllCaps="true"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textColor="@color/theme_colorWindowBackground"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
 
             <EditText
                 android:id="@+id/editTextQtdPessoas"
@@ -78,21 +95,21 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""
-                android:hint="Pessoas para o projeto"
-                />
+                android:background="@drawable/edit_text_style"
+                android:text=""/>
 
 
             <TextView
-                android:id="@+id/textViewProdutividade"
+                android:id="@+id/textViewEsforco5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
-                android:text="PRODUTIVIDADE"
-                android:textAlignment="center"
+                android:text="Produtividade"
+                android:paddingTop="5dp"
                 android:textAllCaps="true"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textColor="@color/theme_colorWindowBackground"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
 
 
             <EditText
@@ -101,71 +118,71 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""
-                android:hint="Informe a produtividade da equipe "
-                />
+                android:background="@drawable/edit_text_style"
+                android:text=""/>
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewEsforco6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
-                android:text="DATA INÍCIO DO PROJETO"
-                android:textAlignment="center"
+                android:text="Data de início"
+                android:paddingTop="5dp"
                 android:textAllCaps="true"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textColor="@color/theme_colorWindowBackground"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
 
             <EditText
                 android:id="@+id/editTextDtInicioProjeto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
                 android:ems="10"
-                android:inputType="date"
-                android:hint="Informe a data de início do projeto "/>
+                android:inputType="date"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-
-                android:orientation="horizontal"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:padding="3dp"
                 android:background="@color/text_normal">
 
                 <CheckBox
                     android:id="@+id/checkBoxDDA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="casual"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:text="DDA"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="336dp" />
+                    android:textColor="@color/theme_colorWindowBackground"
+                    android:textAlignment="viewEnd"/>
 
                 <CheckBox
                     android:id="@+id/checkBoxBanco"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:fontFamily="casual"
                     android:text="Banco"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="336dp" />
+                    android:textColor="@color/theme_colorWindowBackground"
+                    android:textAlignment="viewEnd"/>
 
                 <CheckBox
                     android:id="@+id/checkBoxTest"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:fontFamily="casual"
-                    android:text="Teste Desemp."
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="336dp" />
+                    android:text="Teste Desempenho"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/theme_colorWindowBackground"/>
 
                 <CheckBox
                     android:id="@+id/checkBoxInsumos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:fontFamily="casual"
                     android:text="Insumos"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="336dp" />
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/theme_colorWindowBackground"/>
 
             </LinearLayout>
 
@@ -178,12 +195,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="30dp"
-            android:background="@color/theme_colorControlNormal"
+            android:background="@color/LightSkyBlue"
             android:fontFamily="casual"
+            android:textColor="@color/backgroud"
             android:text="ESTIMAR"
             android:textAllCaps="false"
-            android:textSize="30sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
     </RelativeLayout>

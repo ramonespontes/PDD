@@ -1,0 +1,16 @@
+<!--<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1dp" android:color="@color/certibio_blue"/>
+
+</shape>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/backgroud"/> <!-- cor do sólido -->
+            <corners android:radius="0dp"/> <!-- valor do arredondamento das bordas -->
+            <stroke android:color="@color/theme_colorSwitchThumbNormal" android:width="1dp"/> <!-- cor da borda e tamanho dela -->
+            <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp"/>
+        </shape>
+    </item>
+</selector>

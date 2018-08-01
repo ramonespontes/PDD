@@ -17,4 +17,6 @@
     <color name="color_darkCyan">#00ADEF</color>
     <color name="backgroud">#ffffff</color>
     <color name="black">#030303</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="Ivory1">#EEEEE0</color>
 </resources>
