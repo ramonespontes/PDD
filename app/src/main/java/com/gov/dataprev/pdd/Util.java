@@ -87,8 +87,6 @@ public class Util {
         GregorianCalendar dataFimProjeto = new GregorianCalendar();
         dataFimProjeto.add(Calendar.DAY_OF_MONTH, dias);
 
-
-
         SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
         Date data = dataFimProjeto.getTime();
         formato.applyPattern("dd/MM/yyyy");

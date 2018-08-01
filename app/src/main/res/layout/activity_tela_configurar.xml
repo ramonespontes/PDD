@@ -7,4 +7,11 @@
     android:background="@color/backgroud"
     tools:context=".TelaConfigurar">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Exibirá os prazos da estimativa salva"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="98dp" />
 </android.support.constraint.ConstraintLayout>

@@ -14,6 +14,10 @@ public class CDCInstanceIDService extends FirebaseInstanceIdService {
         String token = FirebaseInstanceId.getInstance().getToken();
         Log.d("Token da App", token);
 
-        //sendRegistrationToServer(refreshedToken);
+        enviaTokenParaServidor(token);
+    }
+
+    private void enviaTokenParaServidor(String refreshedToken) {
+
     }
 }

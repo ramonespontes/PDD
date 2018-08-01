@@ -33,11 +33,13 @@ import java.util.zip.DataFormatException;
 
 public class TelaCalcular extends AppCompatActivity {
 
+    int diasDDA, diasBanco, diasInsumos, diasTestDesemp, diasDDANaoUtil, diasBancoNaoUtil, diasInsumosNaoUtil, diasTestDesempNaoUtil = 0;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_calcular);
+
 
 
         final EditText editTextDemanda = (EditText) findViewById(R.id.editTextDemanda);
@@ -56,6 +58,41 @@ public class TelaCalcular extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                //Verificar se os checkbox foram marcados
+                if (checkBoxDDA.isChecked()){
+                    diasDDA = 5;
+                    diasDDANaoUtil = 7;
+                }else {
+                    diasDDA = 0;
+                    diasDDANaoUtil = 0;
+                }
+
+                if(checkBoxBanco.isChecked()){
+                    diasBanco = 5;
+                    diasBancoNaoUtil = 7;
+                }else {
+                    diasBanco = 0;
+                    diasBancoNaoUtil = 0;
+                }
+
+                if(checkBoxInsumos.isChecked()){
+                    diasInsumos = 5;
+                    diasInsumosNaoUtil = 7;
+                }else {
+                    diasInsumos = 0;
+                    diasInsumosNaoUtil = 0;
+                }
+
+                if(checkBoxTest.isChecked()){
+                    diasTestDesemp = 5;
+                    diasTestDesempNaoUtil = 7;
+                }else {
+                    diasTestDesemp = 0;
+                    diasTestDesempNaoUtil = 0;
+                }
+
+
+
                 if (Util.validateNotNull(editTextDemanda, "Preencha o campo demanda") ||
                         Util.validateNotNull(editTextEsforco, "Preencha o campo esforço")
                         || Util.validateNotNull(editTextQtdPessoas, "Preencha o campo Qtd Pessoas") ||
@@ -71,8 +108,8 @@ public class TelaCalcular extends AppCompatActivity {
                     Util util = new Util();
                     float resultadoEsforcoEquipe = util.estimar(esforco, qtdPessoas, produtividade);
                     float numSprint = esforco / resultadoEsforcoEquipe;
-                    float diasUteis = numSprint * 15;
-                    float diasNaoUteis = numSprint * 21; //Projeta a data fim considerando dias úteis.
+                    float diasUteis = numSprint * 15 + diasDDA + diasBanco + diasInsumos + diasTestDesemp;
+                    float diasNaoUteis = (numSprint * 21) + diasDDANaoUtil + diasBancoNaoUtil + diasInsumosNaoUtil + diasBancoNaoUtil; //Projeta a data fim considerando dias úteis.
 
 
                     //Transdormando a data para local Date com formatação
@@ -90,6 +127,10 @@ public class TelaCalcular extends AppCompatActivity {
                     i.putExtra("produtividade", String.valueOf(produtividade));
                     i.putExtra("numSprint", String.valueOf(numSprint));
                     i.putExtra("diasUteis", String.valueOf(diasUteis));
+                    i.putExtra("dda", String.valueOf(diasDDA));
+                    i.putExtra("banco", String.valueOf(diasBanco));
+                    i.putExtra("insumos", String.valueOf(diasInsumos));
+                    i.putExtra("teste", String.valueOf(diasTestDesemp));
                     i.putExtra("dataInicioProjeto", String.valueOf(dataInicioProjeto));
                     i.putExtra("dataFimProjeto", String.valueOf(dataFimProjeto));
                     startActivity(i);
